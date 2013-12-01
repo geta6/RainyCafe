@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B00800A184B06B90070BFA8 /* RCRainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B008009184B06B90070BFA8 /* RCRainViewController.m */; };
+		7B00800D184B06BF0070BFA8 /* RCConfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B00800C184B06BF0070BFA8 /* RCConfViewController.m */; };
+		7B00800F184B0A480070BFA8 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 7B00800E184B0A480070BFA8 /* www */; };
+		7B008014184B153C0070BFA8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B008013184B153C0070BFA8 /* AVFoundation.framework */; };
+		7B00801B184B15D00070BFA8 /* rain.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7B008019184B15D00070BFA8 /* rain.caf */; };
+		7B00801C184B15D00070BFA8 /* cafe.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7B00801A184B15D00070BFA8 /* cafe.caf */; };
+		7B00801D184B3F270070BFA8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FE517184A1BD300FCA462 /* Main_iPhone.storyboard */; };
+		7B00801E184B3F270070BFA8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FE51A184A1BD300FCA462 /* Main_iPad.storyboard */; };
+		7B1FE506184A1BD300FCA462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1FE505184A1BD300FCA462 /* Foundation.framework */; };
+		7B1FE508184A1BD300FCA462 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1FE507184A1BD300FCA462 /* CoreGraphics.framework */; };
+		7B1FE50A184A1BD300FCA462 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1FE509184A1BD300FCA462 /* UIKit.framework */; };
+		7B1FE510184A1BD300FCA462 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FE50E184A1BD300FCA462 /* InfoPlist.strings */; };
+		7B1FE512184A1BD300FCA462 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE511184A1BD300FCA462 /* main.m */; };
+		7B1FE516184A1BD300FCA462 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE515184A1BD300FCA462 /* RCAppDelegate.m */; };
+		7B1FE51F184A1BD300FCA462 /* RCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FE51E184A1BD300FCA462 /* RCViewController.m */; };
+		7B1FE521184A1BD300FCA462 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FE520184A1BD300FCA462 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B008008184B06B90070BFA8 /* RCRainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCRainViewController.h; sourceTree = "<group>"; };
+		7B008009184B06B90070BFA8 /* RCRainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCRainViewController.m; sourceTree = "<group>"; };
+		7B00800B184B06BF0070BFA8 /* RCConfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCConfViewController.h; sourceTree = "<group>"; };
+		7B00800C184B06BF0070BFA8 /* RCConfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCConfViewController.m; sourceTree = "<group>"; };
+		7B00800E184B0A480070BFA8 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		7B008013184B153C0070BFA8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7B008019184B15D00070BFA8 /* rain.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain.caf; sourceTree = "<group>"; };
+		7B00801A184B15D00070BFA8 /* cafe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cafe.caf; sourceTree = "<group>"; };
+		7B1FE502184A1BD300FCA462 /* rainycafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainycafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1FE505184A1BD300FCA462 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B1FE507184A1BD300FCA462 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B1FE509184A1BD300FCA462 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7B1FE50D184A1BD300FCA462 /* rainycafe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rainycafe-Info.plist"; sourceTree = "<group>"; };
+		7B1FE50F184A1BD300FCA462 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7B1FE511184A1BD300FCA462 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B1FE513184A1BD300FCA462 /* rainycafe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rainycafe-Prefix.pch"; sourceTree = "<group>"; };
+		7B1FE514184A1BD300FCA462 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
+		7B1FE515184A1BD300FCA462 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
+		7B1FE518184A1BD300FCA462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		7B1FE51B184A1BD300FCA462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		7B1FE51D184A1BD300FCA462 /* RCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCViewController.h; sourceTree = "<group>"; };
+		7B1FE51E184A1BD300FCA462 /* RCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCViewController.m; sourceTree = "<group>"; };
+		7B1FE520184A1BD300FCA462 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7B1FE527184A1BD300FCA462 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B1FE4FF184A1BD300FCA462 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B008014184B153C0070BFA8 /* AVFoundation.framework in Frameworks */,
+				7B1FE508184A1BD300FCA462 /* CoreGraphics.framework in Frameworks */,
+				7B1FE50A184A1BD300FCA462 /* UIKit.framework in Frameworks */,
+				7B1FE506184A1BD300FCA462 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B007FB7184AE4510070BFA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B008019184B15D00070BFA8 /* rain.caf */,
+				7B00801A184B15D00070BFA8 /* cafe.caf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7B1FE4F9184A1BD300FCA462 = {
+			isa = PBXGroup;
+			children = (
+				7B00800E184B0A480070BFA8 /* www */,
+				7B1FE50B184A1BD300FCA462 /* rainycafe */,
+				7B1FE504184A1BD300FCA462 /* Frameworks */,
+				7B1FE503184A1BD300FCA462 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B1FE503184A1BD300FCA462 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FE502184A1BD300FCA462 /* rainycafe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B1FE504184A1BD300FCA462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B008013184B153C0070BFA8 /* AVFoundation.framework */,
+				7B1FE505184A1BD300FCA462 /* Foundation.framework */,
+				7B1FE507184A1BD300FCA462 /* CoreGraphics.framework */,
+				7B1FE509184A1BD300FCA462 /* UIKit.framework */,
+				7B1FE527184A1BD300FCA462 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B1FE50B184A1BD300FCA462 /* rainycafe */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FE514184A1BD300FCA462 /* RCAppDelegate.h */,
+				7B1FE515184A1BD300FCA462 /* RCAppDelegate.m */,
+				7B1FE517184A1BD300FCA462 /* Main_iPhone.storyboard */,
+				7B1FE51A184A1BD300FCA462 /* Main_iPad.storyboard */,
+				7B1FE51D184A1BD300FCA462 /* RCViewController.h */,
+				7B1FE51E184A1BD300FCA462 /* RCViewController.m */,
+				7B008008184B06B90070BFA8 /* RCRainViewController.h */,
+				7B008009184B06B90070BFA8 /* RCRainViewController.m */,
+				7B00800B184B06BF0070BFA8 /* RCConfViewController.h */,
+				7B00800C184B06BF0070BFA8 /* RCConfViewController.m */,
+				7B1FE520184A1BD300FCA462 /* Images.xcassets */,
+				7B007FB7184AE4510070BFA8 /* Resources */,
+				7B1FE50C184A1BD300FCA462 /* Supporting Files */,
+			);
+			path = rainycafe;
+			sourceTree = "<group>";
+		};
+		7B1FE50C184A1BD300FCA462 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B1FE50D184A1BD300FCA462 /* rainycafe-Info.plist */,
+				7B1FE50E184A1BD300FCA462 /* InfoPlist.strings */,
+				7B1FE511184A1BD300FCA462 /* main.m */,
+				7B1FE513184A1BD300FCA462 /* rainycafe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B1FE501184A1BD300FCA462 /* rainycafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B1FE537184A1BD300FCA462 /* Build configuration list for PBXNativeTarget "rainycafe" */;
+			buildPhases = (
+				7B1FE4FE184A1BD300FCA462 /* Sources */,
+				7B1FE4FF184A1BD300FCA462 /* Frameworks */,
+				7B1FE500184A1BD300FCA462 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rainycafe;
+			productName = rainycafe;
+			productReference = 7B1FE502184A1BD300FCA462 /* rainycafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B1FE4FA184A1BD300FCA462 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = geta6;
+				TargetAttributes = {
+					7B1FE501184A1BD300FCA462 = {
+						DevelopmentTeam = E2KH8WX767;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7B1FE4FD184A1BD300FCA462 /* Build configuration list for PBXProject "rainycafe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B1FE4F9184A1BD300FCA462;
+			productRefGroup = 7B1FE503184A1BD300FCA462 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B1FE501184A1BD300FCA462 /* rainycafe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B1FE500184A1BD300FCA462 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00801D184B3F270070BFA8 /* Main_iPhone.storyboard in Resources */,
+				7B00801E184B3F270070BFA8 /* Main_iPad.storyboard in Resources */,
+				7B00801C184B15D00070BFA8 /* cafe.caf in Resources */,
+				7B00801B184B15D00070BFA8 /* rain.caf in Resources */,
+				7B1FE521184A1BD300FCA462 /* Images.xcassets in Resources */,
+				7B1FE510184A1BD300FCA462 /* InfoPlist.strings in Resources */,
+				7B00800F184B0A480070BFA8 /* www in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B1FE4FE184A1BD300FCA462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B1FE516184A1BD300FCA462 /* RCAppDelegate.m in Sources */,
+				7B1FE51F184A1BD300FCA462 /* RCViewController.m in Sources */,
+				7B00800A184B06B90070BFA8 /* RCRainViewController.m in Sources */,
+				7B00800D184B06BF0070BFA8 /* RCConfViewController.m in Sources */,
+				7B1FE512184A1BD300FCA462 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B1FE50E184A1BD300FCA462 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B1FE50F184A1BD300FCA462 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7B1FE517184A1BD300FCA462 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B1FE518184A1BD300FCA462 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		7B1FE51A184A1BD300FCA462 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B1FE51B184A1BD300FCA462 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B1FE535184A1BD300FCA462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B1FE536184A1BD300FCA462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B1FE538184A1BD300FCA462 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rainycafe/rainycafe-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/rainycafe/rainycafe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = rainycafe;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7B1FE539184A1BD300FCA462 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rainycafe/rainycafe-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/rainycafe/rainycafe-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = rainycafe;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B1FE4FD184A1BD300FCA462 /* Build configuration list for PBXProject "rainycafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B1FE535184A1BD300FCA462 /* Debug */,
+				7B1FE536184A1BD300FCA462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B1FE537184A1BD300FCA462 /* Build configuration list for PBXNativeTarget "rainycafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B1FE538184A1BD300FCA462 /* Debug */,
+				7B1FE539184A1BD300FCA462 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B1FE4FA184A1BD300FCA462 /* Project object */;
+}

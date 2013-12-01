@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>rainyday.js demo #1</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <style media="screen">
+      html,body { background: transparent; margin: 0; padding: 0; height: 100%; }
+      body { overflow: hidden; }
+      #holder { z-index: 1; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: black; border: none; }
+      #canvas { z-index: 0; position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+    </style>
+    <script src="rainyday.js"></script>
+    <script src="jquery.js"></script>
+    <script>
+      window.engine = null;
+      window.rain = function (id) {
+        $(function() {
+          var image = new Image();
+          image.src = 'img/' + id + '.jpg' + '?' + new Date().getTime();
+          image.onload = function() {
+            var $holder = $('<img>').attr({id: 'holder', src: image.src});
+            var $canvas = $('<canvas>').attr('id', 'canvas');
+            $('body').empty().append($holder).append($canvas);
+            if (engine !== null) {
+              clearInterval(engine.dropInterval);
+            }
+            setTimeout(function(){
+              engine = new RainyDay('canvas', 'holder', window.innerWidth, window.innerHeight);
+              engine.gravity = engine.GRAVITY_NON_LINEAR;
+              engine.trail = engine.TRAIL_DROPS;
+              engine.rain([
+                engine.preset(3, 3, 0.88),
+                engine.preset(5, 5, 0.9),
+                engine.preset(6, 2, 1)
+              ], 1000);
+              $holder.fadeOut(360);
+            }, 100);
+          };
+        });
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A2093" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="Ns7-Lh-SUe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="h6S-RB-Iph">
+            <objects>
+                <viewController id="Ns7-Lh-SUe" customClass="RCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1bt-FV-W80"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDu-WV-Jes"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T8R-ig-4Lm">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLD-N2-tFu">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="PS5-Qy-Num" kind="embed" id="XhP-Zy-xTi"/>
+                                </connections>
+                            </containerView>
+                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTB-B2-r1I">
+                                <rect key="frame" x="768" y="0.0" width="240" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="CU4-9n-bb6" kind="embed" id="UYX-pX-pCr"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="y90-4J-F60" appends="YES" id="7gr-9d-9wO"/>
+                            <outletCollection property="gestureRecognizers" destination="f5M-uG-bRg" appends="YES" id="n5v-oT-4hU"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="confView" destination="eTB-B2-r1I" id="rVy-iY-v6J"/>
+                        <outlet property="rainView" destination="tLD-N2-tFu" id="lOj-hs-5qU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lB7-9A-Gxl" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="f5M-uG-bRg" userLabel="Left Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="didSwipeScreen:" destination="Ns7-Lh-SUe" id="fXJ-7W-Yh1"/>
+                        <outlet property="delegate" destination="Ns7-Lh-SUe" id="KOQ-2f-kba"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="y90-4J-F60" userLabel="Right Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="didSwipeScreen:" destination="Ns7-Lh-SUe" id="lGH-Eg-Ccc"/>
+                        <outlet property="delegate" destination="Ns7-Lh-SUe" id="ecP-is-tk6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-611" y="218"/>
+        </scene>
+        <!--Rain View Controller-->
+        <scene sceneID="xRi-jh-UK5">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PS5-Qy-Num" customClass="RCRainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQi-vr-uig"/>
+                        <viewControllerLayoutGuide type="bottom" id="BUv-9M-3Du"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="y14-J3-Unq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNE-rg-bEG">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1K-Ld-Kyv">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PS5-Qy-Num" id="w6Y-xK-UGy"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="backView" destination="lNE-rg-bEG" id="p8Q-3s-6QB"/>
+                        <outlet property="mainView" destination="G1K-Ld-Kyv" id="Ank-Le-5mZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i33-PB-3Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="482" y="-86"/>
+        </scene>
+        <!--Conf View Controller-->
+        <scene sceneID="fH5-Kd-4w5">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="CU4-9n-bb6" customClass="RCConfViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Ae-dl-siI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dlf-K8-85K"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7gt-9c-iO5">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.60000002384185791" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3gQ-Xe-OET" userLabel="cafeSlider">
+                                <rect key="frame" x="18" y="111" width="204" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.72015768290000004" green="0.25617697830000002" blue="0.1933501363" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slideCafePlayer" destination="CU4-9n-bb6" eventType="valueChanged" id="fkz-GQ-7LP"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x8Q-g5-UbE" userLabel="cafeSwitch">
+                                <rect key="frame" x="171" y="72" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.72015768290000004" green="0.25617697830000002" blue="0.1933501363" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchCafePlayer" destination="CU4-9n-bb6" eventType="valueChanged" id="4UH-MZ-hBg"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.80000001192092896" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dDR-eg-50B" userLabel="rainSlider">
+                                <rect key="frame" x="18" y="237" width="204" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.38431372549999998" green="0.63921568630000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slideRainPlayer" destination="CU4-9n-bb6" eventType="valueChanged" id="Mny-za-OdB"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGj-wx-ZSn" userLabel="rainSwitch">
+                                <rect key="frame" x="171" y="198" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.38431372549999998" green="0.63921568630000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchRainPlayer" destination="CU4-9n-bb6" eventType="valueChanged" id="VaV-Go-uWb"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cafe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuj-v7-Hw3">
+                                <rect key="frame" x="20" y="72" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGy-pe-9Ht">
+                                <rect key="frame" x="20" y="198" width="100" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ah8-48-Kb3">
+                                <rect key="frame" x="0.0" y="808" width="240" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CU4-9n-bb6" id="Xob-oi-N8y"/>
+                                    <outlet property="delegate" destination="CU4-9n-bb6" id="eek-tk-vwf"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="cafeSlider" destination="3gQ-Xe-OET" id="eOs-bu-Pvc"/>
+                        <outlet property="cafeSwitch" destination="x8Q-g5-UbE" id="cvI-0F-5un"/>
+                        <outlet property="rainSlider" destination="dDR-eg-50B" id="WeW-zU-FMD"/>
+                        <outlet property="rainSwitch" destination="cGj-wx-ZSn" id="k86-Na-NYR"/>
+                        <outlet property="rainycafePicker" destination="ah8-48-Kb3" id="oDD-Ew-RtZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2a-C3-iYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="1182"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
