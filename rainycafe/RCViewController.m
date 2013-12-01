@@ -27,7 +27,9 @@
 {
   DBGMSG(@"%s", __func__);
   [super viewDidAppear:animated];
-  [confView setFrame:CGRectMake(self.view.frame.size.width, 0, confView.frame.size.width, confView.frame.size.height)];
+  [self.view setFrame:[[UIScreen mainScreen] bounds]];
+  [rainView setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+  [confView setFrame:CGRectMake(self.view.frame.size.width, 0, confView.frame.size.width, self.view.frame.size.height)];
   [confView.layer setMasksToBounds:NO];
   [confView.layer setShadowOffset:CGSizeMake(0, 0)];
   [confView.layer setShadowColor:[[UIColor blackColor] CGColor]];

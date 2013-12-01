@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="din-aT-ns4">
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="din-aT-ns4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -24,7 +24,7 @@
                                     <segue destination="1W9-i9-Qiz" kind="embed" id="TJD-Mr-3op"/>
                                 </connections>
                             </containerView>
-                            <containerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vig-g6-SzS">
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vig-g6-SzS">
                                 <rect key="frame" x="320" y="0.0" width="240" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +35,16 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Vig-g6-SzS" firstAttribute="leading" secondItem="din-aT-ns4" secondAttribute="trailing" id="3Ax-PC-ML7"/>
+                            <constraint firstAttribute="bottom" secondItem="Vig-g6-SzS" secondAttribute="bottom" id="TEQ-3a-nZc"/>
+                            <constraint firstItem="Vig-g6-SzS" firstAttribute="top" secondItem="din-aT-ns4" secondAttribute="top" id="gVy-ob-NcE"/>
+                            <constraint firstItem="Vig-g6-SzS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="320" id="igm-dh-xG5"/>
+                            <constraint firstItem="Vig-g6-SzS" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="nih-fl-KNy"/>
+                            <constraint firstAttribute="trailing" secondItem="Vig-g6-SzS" secondAttribute="trailing" constant="-240" id="o8X-wc-OUq"/>
+                            <constraint firstAttribute="bottom" secondItem="din-aT-ns4" secondAttribute="bottom" id="ooW-w9-7ao"/>
+                            <constraint firstItem="din-aT-ns4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="zjO-yA-QNH"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="pAN-PH-43f" appends="YES" id="Y2m-Fj-N67"/>
                             <outletCollection property="gestureRecognizers" destination="VYF-2o-YVi" appends="YES" id="odF-vu-zLU"/>
@@ -73,12 +83,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-MP-273">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fmD-MP-273">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRG-9P-LCR">
+                            <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRG-9P-LCR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -89,6 +99,16 @@
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fmD-MP-273" firstAttribute="trailing" secondItem="cRG-9P-LCR" secondAttribute="trailing" id="7Dr-Fg-Mbr"/>
+                            <constraint firstAttribute="trailing" secondItem="fmD-MP-273" secondAttribute="trailing" id="BnR-Tf-pa5"/>
+                            <constraint firstAttribute="bottom" secondItem="cRG-9P-LCR" secondAttribute="bottom" id="K4R-bu-oKS"/>
+                            <constraint firstAttribute="bottom" secondItem="fmD-MP-273" secondAttribute="bottom" id="hHY-78-YeE"/>
+                            <constraint firstItem="fmD-MP-273" firstAttribute="leading" secondItem="8X5-Br-cSV" secondAttribute="leading" id="hxY-x0-RPj"/>
+                            <constraint firstItem="fmD-MP-273" firstAttribute="leading" secondItem="cRG-9P-LCR" secondAttribute="leading" id="vrx-02-XjK"/>
+                            <constraint firstItem="fmD-MP-273" firstAttribute="top" secondItem="8X5-Br-cSV" secondAttribute="top" id="wPO-a2-Epe"/>
+                            <constraint firstItem="fmD-MP-273" firstAttribute="top" secondItem="cRG-9P-LCR" secondAttribute="top" id="xjh-aO-GSE"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <connections>
@@ -112,63 +132,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="240" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.59999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dPp-0R-zwg" userLabel="cafeSlider">
-                                <rect key="frame" x="18" y="111" width="204" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.72015768290000004" green="0.25617697830000002" blue="0.1933501363" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="slideCafePlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="ifL-OQ-wqJ"/>
-                                </connections>
-                            </slider>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fZK-2R-xZO" userLabel="cafeSwitch">
-                                <rect key="frame" x="171" y="72" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.72015768290000004" green="0.25617697830000002" blue="0.1933501363" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="switchCafePlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="RdI-2P-anP"/>
-                                </connections>
-                            </switch>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.80000000000000004" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-5D-Jak" userLabel="rainSlider">
-                                <rect key="frame" x="18" y="237" width="204" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.38431372549999998" green="0.63921568630000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="slideRainPlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="hDe-Z9-L3B"/>
-                                </connections>
-                            </slider>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cm0-1x-LDc" userLabel="rainSwitch">
-                                <rect key="frame" x="171" y="198" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="onTintColor" red="0.38431372549999998" green="0.63921568630000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="switchRainPlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="0g8-cO-zIz"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cafe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-1t-qfc">
-                                <rect key="frame" x="20" y="72" width="100" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezc-gM-eW1">
-                                <rect key="frame" x="20" y="198" width="100" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rz4-3R-Xij">
+                            <pickerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rz4-3R-Xij">
                                 <rect key="frame" x="0.0" y="352" width="240" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ctN-pT-0Fx"/>
+                                    <constraint firstAttribute="height" constant="216" id="zgC-Ru-oso"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="ctC-aD-CwT" id="qFN-gM-sxB"/>
                                     <outlet property="delegate" destination="ctC-aD-CwT" id="vdx-wy-57S"/>
                                 </connections>
                             </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hf3-KJ-D3w">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.80000000000000004" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-5D-Jak" userLabel="rainSlider">
+                                        <rect key="frame" x="18" y="176" width="204" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="minimumTrackTintColor" red="0.38431372549999998" green="0.63921568630000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="slideRainPlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="hDe-Z9-L3B"/>
+                                        </connections>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cm0-1x-LDc" userLabel="rainSwitch">
+                                        <rect key="frame" x="171" y="137" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="0.38431372549999998" green="0.63921568630000003" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="switchRainPlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="0g8-cO-zIz"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rain" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezc-gM-eW1">
+                                        <rect key="frame" x="20" y="137" width="100" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.59999999999999998" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dPp-0R-zwg" userLabel="cafeSlider">
+                                        <rect key="frame" x="18" y="96" width="204" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="minimumTrackTintColor" red="0.72015768290000004" green="0.25617697830000002" blue="0.1933501363" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="slideCafePlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="ifL-OQ-wqJ"/>
+                                        </connections>
+                                    </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fZK-2R-xZO" userLabel="cafeSwitch">
+                                        <rect key="frame" x="171" y="57" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="0.72015768290000004" green="0.25617697830000002" blue="0.1933501363" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="switchCafePlayer" destination="ctC-aD-CwT" eventType="valueChanged" id="RdI-2P-anP"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cafe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qh4-1t-qfc">
+                                        <rect key="frame" x="20" y="57" width="100" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="31"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rz4-3R-Xij" firstAttribute="trailing" secondItem="Hf3-KJ-D3w" secondAttribute="trailing" id="8WA-Rv-HAf"/>
+                            <constraint firstItem="rz4-3R-Xij" firstAttribute="leading" secondItem="aZl-yn-8Dv" secondAttribute="leading" id="DZb-Yq-v0m"/>
+                            <constraint firstItem="rz4-3R-Xij" firstAttribute="leading" secondItem="Hf3-KJ-D3w" secondAttribute="leading" id="FC2-zx-cXc"/>
+                            <constraint firstItem="azl-ku-ro1" firstAttribute="top" secondItem="rz4-3R-Xij" secondAttribute="bottom" id="TUe-Bv-MLN"/>
+                            <constraint firstItem="Hf3-KJ-D3w" firstAttribute="top" secondItem="aZl-yn-8Dv" secondAttribute="top" id="ac9-dy-Ege"/>
+                            <constraint firstAttribute="bottom" secondItem="Hf3-KJ-D3w" secondAttribute="bottom" constant="339" id="cGj-ye-OA6"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <connections>

@@ -15,13 +15,13 @@
   DBGMSG(@"%s", __func__);
   [super viewDidLoad];
   [mainView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"www/index" ofType:@"html"]]]];
-  [mainView setScalesPageToFit:NO];
-  for(id subview in mainView.subviews) {
-    if([[subview class] isSubclassOfClass:[UIScrollView class]]) {
-      [((UIScrollView *) subview) setBounces:NO];
-      [((UIScrollView *) subview) setScrollEnabled:NO];
-    }
-  }
+  [mainView setScalesPageToFit:YES];
+//  for(id subview in mainView.subviews) {
+//    if([[subview class] isSubclassOfClass:[UIScrollView class]]) {
+//      [((UIScrollView *) subview) setBounces:NO];
+//      [((UIScrollView *) subview) setScrollEnabled:NO];
+//    }
+//  }
   didLoadWebView = NO;
   [self rain:@"city"];
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(rainNotification:) name:@"rain" object:nil];
