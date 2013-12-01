@@ -33,7 +33,7 @@
         <blockquote>
           <p>“A moderate level of noise enhances creativity compared to both low and high levels of noise. Moderate background noise induces distraction which encourages individuals to think at a higher, abstract level, and consequently exhibit higher creativity.”</p>
         </blockquote>
-        <p style='display:none'><img id='image' src="https://raw.github.com/geta6/RainyCafe/master/www/img/city.jpg"></p>
+        <p style='display:none'><img id='image' src="images/city.jpg"></p>
         <p><canvas id='rainy'></canvas></p>
         <h2>
           <a name="screenshots" class="anchor" href="#screenshots">
@@ -55,7 +55,7 @@
     <script src='javascripts/rainyday.js'></script>
     <script>
       $(function() {
-        var engine = new RainyDay('rainy', 'image', 320, 200);
+        var engine = new RainyDay('rainy', 'image', 500, 333);
         engine.gravity = engine.GRAVITY_NON_LINEAR;
         engine.trail = engine.TRAIL_DROPS;
         engine.rain([
