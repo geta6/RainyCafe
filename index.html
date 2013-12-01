@@ -10,6 +10,10 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style>
+      #canvas { position:relative;}
+      #canvas canvas { position:absolute; top:0; left:0; }
+    </style>
   </head>
   <body>
     <div class="wrapper">
@@ -34,7 +38,7 @@
           <p>“A moderate level of noise enhances creativity compared to both low and high levels of noise. Moderate background noise induces distraction which encourages individuals to think at a higher, abstract level, and consequently exhibit higher creativity.”</p>
         </blockquote>
         <p style='display:none'><img id='image' src="images/city.jpg"></p>
-        <p><canvas id='rainy'></canvas></p>
+        <p id='canvas'><canvas id='rainy'></canvas></p>
         <h2>
           <a name="screenshots" class="anchor" href="#screenshots">
             <span class="octicon octicon-link"></span>
